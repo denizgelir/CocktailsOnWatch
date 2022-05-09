@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3922CF528291D1F0037808E /* CocktailDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3922CF428291D1F0037808E /* CocktailDetailInterfaceController.swift */; };
+		F3922CF728292A790037808E /* CocktailDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3922CF628292A790037808E /* CocktailDetailViewModel.swift */; };
+		F3C26FBD281AD2370099ABC1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F3C26FBC281AD2370099ABC1 /* Kingfisher */; };
+		F3E94C3C281811B000F6DF05 /* CocktailsOnWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F3E94C3B281811B000F6DF05 /* CocktailsOnWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3E94C42281811B000F6DF05 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E94C40281811B000F6DF05 /* Interface.storyboard */; };
+		F3E94C44281811B400F6DF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E94C43281811B400F6DF05 /* Assets.xcassets */; };
+		F3E94C4A281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3E94C49281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3E94C4F281811B400F6DF05 /* CocktailListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E94C4E281811B400F6DF05 /* CocktailListInterfaceController.swift */; };
+		F3E94C51281811B400F6DF05 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E94C50281811B400F6DF05 /* ExtensionDelegate.swift */; };
+		F3E94C53281811B400F6DF05 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E94C52281811B400F6DF05 /* NotificationController.swift */; };
+		F3E94C55281811B400F6DF05 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E94C54281811B400F6DF05 /* ComplicationController.swift */; };
+		F3E94C57281811B600F6DF05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E94C56281811B600F6DF05 /* Assets.xcassets */; };
+		F3E94C6D2818150A00F6DF05 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = F3E94C6C2818150A00F6DF05 /* Network */; };
+		F3E94C6F2818192A00F6DF05 /* CocktailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E94C6E2818192A00F6DF05 /* CocktailListViewModel.swift */; };
+		F3E94C73281823F500F6DF05 /* CocktailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E94C72281823F500F6DF05 /* CocktailRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3E94C3D281811B000F6DF05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E94C31281811B000F6DF05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3E94C3A281811B000F6DF05;
+			remoteInfo = "CocktailsOnWatch WatchKit App";
+		};
+		F3E94C4B281811B400F6DF05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E94C31281811B000F6DF05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3E94C48281811B400F6DF05;
+			remoteInfo = "CocktailsOnWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3E94C5F281811B600F6DF05 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3E94C4A281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E94C63281811B600F6DF05 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F3E94C3C281811B000F6DF05 /* CocktailsOnWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F3922CF428291D1F0037808E /* CocktailDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailInterfaceController.swift; sourceTree = "<group>"; };
+		F3922CF628292A790037808E /* CocktailDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailViewModel.swift; sourceTree = "<group>"; };
+		F3E94C37281811B000F6DF05 /* CocktailsOnWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailsOnWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E94C3B281811B000F6DF05 /* CocktailsOnWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocktailsOnWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E94C41281811B000F6DF05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F3E94C43281811B400F6DF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E94C49281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CocktailsOnWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E94C4E281811B400F6DF05 /* CocktailListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListInterfaceController.swift; sourceTree = "<group>"; };
+		F3E94C50281811B400F6DF05 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F3E94C52281811B400F6DF05 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F3E94C54281811B400F6DF05 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F3E94C56281811B600F6DF05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E94C58281811B600F6DF05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E94C59281811B600F6DF05 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F3E94C692818144C00F6DF05 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Network; path = Packages/Network; sourceTree = "<group>"; };
+		F3E94C6B281814F300F6DF05 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/Network.framework; sourceTree = DEVELOPER_DIR; };
+		F3E94C6E2818192A00F6DF05 /* CocktailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListViewModel.swift; sourceTree = "<group>"; };
+		F3E94C72281823F500F6DF05 /* CocktailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3E94C46281811B400F6DF05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C26FBD281AD2370099ABC1 /* Kingfisher in Frameworks */,
+				F3E94C6D2818150A00F6DF05 /* Network in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3922CF92829427C0037808E /* CocktailList */ = {
+			isa = PBXGroup;
+			children = (
+				F3E94C72281823F500F6DF05 /* CocktailRow.swift */,
+				F3E94C4E281811B400F6DF05 /* CocktailListInterfaceController.swift */,
+				F3E94C6E2818192A00F6DF05 /* CocktailListViewModel.swift */,
+			);
+			path = CocktailList;
+			sourceTree = "<group>";
+		};
+		F3922CFA2829428C0037808E /* CocktailDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F3922CF428291D1F0037808E /* CocktailDetailInterfaceController.swift */,
+				F3922CF628292A790037808E /* CocktailDetailViewModel.swift */,
+			);
+			path = CocktailDetail;
+			sourceTree = "<group>";
+		};
+		F3E94C30281811B000F6DF05 = {
+			isa = PBXGroup;
+			children = (
+				F3E94C682818144C00F6DF05 /* Packages */,
+				F3E94C3F281811B000F6DF05 /* CocktailsOnWatch WatchKit App */,
+				F3E94C4D281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension */,
+				F3E94C38281811B000F6DF05 /* Products */,
+				F3E94C6A281814F300F6DF05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3E94C38281811B000F6DF05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3E94C37281811B000F6DF05 /* CocktailsOnWatch.app */,
+				F3E94C3B281811B000F6DF05 /* CocktailsOnWatch WatchKit App.app */,
+				F3E94C49281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E94C3F281811B000F6DF05 /* CocktailsOnWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F3E94C40281811B000F6DF05 /* Interface.storyboard */,
+				F3E94C43281811B400F6DF05 /* Assets.xcassets */,
+			);
+			path = "CocktailsOnWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F3E94C4D281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3922CF92829427C0037808E /* CocktailList */,
+				F3922CFA2829428C0037808E /* CocktailDetail */,
+				F3E94C50281811B400F6DF05 /* ExtensionDelegate.swift */,
+				F3E94C52281811B400F6DF05 /* NotificationController.swift */,
+				F3E94C54281811B400F6DF05 /* ComplicationController.swift */,
+				F3E94C56281811B600F6DF05 /* Assets.xcassets */,
+				F3E94C58281811B600F6DF05 /* Info.plist */,
+				F3E94C59281811B600F6DF05 /* PushNotificationPayload.apns */,
+			);
+			path = "CocktailsOnWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F3E94C682818144C00F6DF05 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F3E94C692818144C00F6DF05 /* Network */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F3E94C6A281814F300F6DF05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3E94C6B281814F300F6DF05 /* Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3E94C36281811B000F6DF05 /* CocktailsOnWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E94C64281811B600F6DF05 /* Build configuration list for PBXNativeTarget "CocktailsOnWatch" */;
+			buildPhases = (
+				F3E94C35281811B000F6DF05 /* Resources */,
+				F3E94C63281811B600F6DF05 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3E94C3E281811B000F6DF05 /* PBXTargetDependency */,
+			);
+			name = CocktailsOnWatch;
+			packageProductDependencies = (
+				F3C26FBB281ACEB30099ABC1 /* Kingfisher */,
+			);
+			productName = CocktailsOnWatch;
+			productReference = F3E94C37281811B000F6DF05 /* CocktailsOnWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F3E94C3A281811B000F6DF05 /* CocktailsOnWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E94C60281811B600F6DF05 /* Build configuration list for PBXNativeTarget "CocktailsOnWatch WatchKit App" */;
+			buildPhases = (
+				F3E94C39281811B000F6DF05 /* Resources */,
+				F3E94C5F281811B600F6DF05 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3E94C4C281811B400F6DF05 /* PBXTargetDependency */,
+			);
+			name = "CocktailsOnWatch WatchKit App";
+			productName = "CocktailsOnWatch WatchKit App";
+			productReference = F3E94C3B281811B000F6DF05 /* CocktailsOnWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F3E94C48281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E94C5C281811B600F6DF05 /* Build configuration list for PBXNativeTarget "CocktailsOnWatch WatchKit Extension" */;
+			buildPhases = (
+				F3E94C45281811B400F6DF05 /* Sources */,
+				F3E94C46281811B400F6DF05 /* Frameworks */,
+				F3E94C47281811B400F6DF05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocktailsOnWatch WatchKit Extension";
+			packageProductDependencies = (
+				F3E94C6C2818150A00F6DF05 /* Network */,
+				F3C26FBC281AD2370099ABC1 /* Kingfisher */,
+			);
+			productName = "CocktailsOnWatch WatchKit Extension";
+			productReference = F3E94C49281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3E94C31281811B000F6DF05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F3E94C36281811B000F6DF05 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F3E94C3A281811B000F6DF05 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					F3E94C48281811B400F6DF05 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = F3E94C34281811B000F6DF05 /* Build configuration list for PBXProject "CocktailsOnWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3E94C30281811B000F6DF05;
+			packageReferences = (
+				F3C26FBA281ACEB30099ABC1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = F3E94C38281811B000F6DF05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3E94C36281811B000F6DF05 /* CocktailsOnWatch */,
+				F3E94C3A281811B000F6DF05 /* CocktailsOnWatch WatchKit App */,
+				F3E94C48281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3E94C35281811B000F6DF05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E94C39281811B000F6DF05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E94C44281811B400F6DF05 /* Assets.xcassets in Resources */,
+				F3E94C42281811B000F6DF05 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E94C47281811B400F6DF05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E94C57281811B600F6DF05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E94C45281811B400F6DF05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E94C53281811B400F6DF05 /* NotificationController.swift in Sources */,
+				F3922CF728292A790037808E /* CocktailDetailViewModel.swift in Sources */,
+				F3E94C6F2818192A00F6DF05 /* CocktailListViewModel.swift in Sources */,
+				F3E94C55281811B400F6DF05 /* ComplicationController.swift in Sources */,
+				F3E94C51281811B400F6DF05 /* ExtensionDelegate.swift in Sources */,
+				F3E94C73281823F500F6DF05 /* CocktailRow.swift in Sources */,
+				F3922CF528291D1F0037808E /* CocktailDetailInterfaceController.swift in Sources */,
+				F3E94C4F281811B400F6DF05 /* CocktailListInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3E94C3E281811B000F6DF05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3E94C3A281811B000F6DF05 /* CocktailsOnWatch WatchKit App */;
+			targetProxy = F3E94C3D281811B000F6DF05 /* PBXContainerItemProxy */;
+		};
+		F3E94C4C281811B400F6DF05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3E94C48281811B400F6DF05 /* CocktailsOnWatch WatchKit Extension */;
+			targetProxy = F3E94C4B281811B400F6DF05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3E94C40281811B000F6DF05 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E94C41281811B000F6DF05 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3E94C5A281811B600F6DF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3E94C5B281811B600F6DF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3E94C5D281811B600F6DF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AYSN24S6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CocktailsOnWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CocktailsOnWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizgelir.CocktailsOnWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		F3E94C5E281811B600F6DF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AYSN24S6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CocktailsOnWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CocktailsOnWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizgelir.CocktailsOnWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		F3E94C61281811B600F6DF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AYSN24S6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CocktailsOnWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CocktailsOnWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizgelir.CocktailsOnWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CocktailsOnWatch WatchKit App/CocktailsOnWatch WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		F3E94C62281811B600F6DF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AYSN24S6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CocktailsOnWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CocktailsOnWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizgelir.CocktailsOnWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CocktailsOnWatch WatchKit App/CocktailsOnWatch WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		F3E94C65281811B600F6DF05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AYSN24S6A;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizgelir.CocktailsOnWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3E94C66281811B600F6DF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AYSN24S6A;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizgelir.CocktailsOnWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3E94C34281811B000F6DF05 /* Build configuration list for PBXProject "CocktailsOnWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E94C5A281811B600F6DF05 /* Debug */,
+				F3E94C5B281811B600F6DF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E94C5C281811B600F6DF05 /* Build configuration list for PBXNativeTarget "CocktailsOnWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E94C5D281811B600F6DF05 /* Debug */,
+				F3E94C5E281811B600F6DF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E94C60281811B600F6DF05 /* Build configuration list for PBXNativeTarget "CocktailsOnWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E94C61281811B600F6DF05 /* Debug */,
+				F3E94C62281811B600F6DF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E94C64281811B600F6DF05 /* Build configuration list for PBXNativeTarget "CocktailsOnWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E94C65281811B600F6DF05 /* Debug */,
+				F3E94C66281811B600F6DF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3C26FBA281ACEB30099ABC1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3C26FBB281ACEB30099ABC1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C26FBA281ACEB30099ABC1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F3C26FBC281AD2370099ABC1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3C26FBA281ACEB30099ABC1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F3E94C6C2818150A00F6DF05 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F3E94C31281811B000F6DF05 /* Project object */;
+}
